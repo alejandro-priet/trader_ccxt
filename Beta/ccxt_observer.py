@@ -36,11 +36,6 @@ if plott == 'y':
 
 # Exchange API Data
 
-kraken = ccxt.kraken({
-    'apiKey': '******',
-    'secret': '******',
-})
-
 exchange_id = 'binance'
 exchange_class = getattr(ccxt, exchange_id)
 exchange = exchange_class({
